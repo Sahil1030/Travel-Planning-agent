@@ -1,5 +1,4 @@
-streamlit
-python-dotenv>=0.19.2
-phi
 phidata
-exa_py
+exa-py
+streamlit
+python-dotenv
