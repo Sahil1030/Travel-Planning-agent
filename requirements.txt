@@ -5,4 +5,4 @@ python-dotenv == 1.0.1
 phi == 0.6.7
 googlesearch-python
 pycountry
-groc
+groq
