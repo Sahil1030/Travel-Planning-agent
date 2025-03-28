@@ -2,3 +2,4 @@ phidata
 exa-py
 streamlit
 python-dotenv
+phi
