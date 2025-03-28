@@ -1,30 +1,56 @@
 # Travel Itinerary Planner
 
 ## Overview
-
-The Travel Itinerary Planner is an AI-powered application that helps users create customized travel plans. Using a multi-agent system built on the phi framework and Streamlit for the GUI, the application aggregates information from specialized agents (itinerary, weather, and travel/accommodation) to generate a detailed, day-by-day travel plan. The system tailors recommendations based on user inputs such as budget, number of people, travel dates, duration, destination, starting location, travel purpose, preferences, and additional notes.
+The Travel Itinerary Planner is an AI-powered tool designed to create detailed and customized travel plans. It utilizes multiple agents to provide itinerary recommendations, weather forecasts, transportation, accommodation suggestions, and budget-conscious activity planning.
 
 ## Features
+- **AI-powered Travel Planning:** Generates personalized itineraries based on user input.
+- **Multi-Agent System:** Uses different agents for weather, travel, and activity planning.
+- **Budget-Friendly Recommendations:** Suggests accommodations, transport, and activities within the specified budget.
+- **Real-Time Web Searches:** Fetches the latest events, attractions, and weather conditions.
+- **Streamlit UI:** Provides an interactive interface for users to input their trip details.
 
-- **Multi-Agent Integration:** Combines responses from itinerary, weather, and travel/accommodation agents.
-- **Dynamic Itinerary Generation:** Produces detailed daily schedules including transportation options, accommodations, activities, and weather forecasts.
-- **Demo Inputs:** Pre-filled input fields for an enhanced user experience and easier testing.
-- **Streamlit GUI:** A user-friendly interface to input travel details and view the generated itinerary.
-- **Accurate and Customized:** Agents retrieve data from reputable sources and include booking links, estimated costs, and source references.
+## Installation
+1. Clone the repository:
+   ```sh
+   git clone <repository-url>
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd Travel_Itinerary_Planner
+   ```
+3. Install the dependencies:
+   ```sh
+   pip install -r requirements.txt
+   ```
+4. Set up the required API keys in a `.env` file:
+   ```sh
+   EXA_API_KEY=your_exa_api_key
+   GROQ_API_KEY=your_groq_api_key
+   ```
 
-## Requirements
+## Usage
+1. Run the Streamlit application:
+   ```sh
+   streamlit run app.py
+   ```
+2. Enter your trip details such as budget, destination, duration, and preferences.
+3. Receive a detailed travel plan with activities, accommodations, transport, and weather insights.
 
-- Python 3.7+
-- [phi](https://github.com/your-org/phi) library (for agent management)
-- [exa_py](https://github.com/your-org/exa_py) library (for travel data extraction)
-- [Streamlit](https://streamlit.io/)
-- Environment variables:
-  - `EXA_API_KEY`
-  - `GROQ_API_KEY`
+## Agents in Use
+- **Google Search Agent:** Fetches real-time travel data.
+- **Weather Agent:** Provides weather forecasts for the trip duration.
+- **Travel & Accommodation Agent:** Suggests transport and hotels based on budget and preference.
+- **Itinerary Planning Agent:** Compiles the final travel plan with day-by-day schedules.
 
-## Setup
+## Future Improvements
+- Integration with flight and hotel booking APIs.
+- Enhanced UI/UX for better user interaction.
+- More AI-powered personalization for recommendations.
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-username/travel-itinerary-planner.git
-   cd travel-itinerary-planner
+## Contributing
+Feel free to submit issues and pull requests to improve the project.
+
+## License
+This project is licensed under the MIT License.
+
