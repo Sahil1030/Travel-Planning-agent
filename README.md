@@ -13,7 +13,7 @@ The Travel Itinerary Planner is an AI-powered tool designed to create detailed a
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone Travel-Planning-agent
    ```
 2. Navigate to the project directory:
    ```sh
